@@ -1,0 +1,12 @@
+Project Abstract
+Title: Email to SMS Converter (Offline Notifier)
+Department: Computer Science / Information Technology
+Technology Stack: Node.js, Express.js, React.js, IMAP Protocol, httpSMS API
+
+In today's fast-paced digital world, important email notifications often go unnoticed due to lack of internet access, silent mode, or email overload. The Email to SMS Converter is a full-stack web application designed to bridge this communication gap by automatically converting critical incoming emails into SMS alerts delivered directly to a mobile phone.
+The system continuously monitors a configured Gmail inbox using the IMAP protocol, extracting the sender, subject, and body of each incoming email. A smart keyword-based filtering engine scans each email for user-defined trigger words such as "URGENT", "Assignment", "Alert", or "Deadline". Only emails matching these keywords are forwarded as SMS messages, reducing unnecessary noise.
+SMS delivery is achieved through httpSMS, an open-source Android-based SMS gateway that eliminates the need for expensive third-party SMS services. The user's Android phone acts as the physical SMS transmitter, sending real text messages via the device's SIM card through a simple HTTP API call from the backend server.
+The application features a React-based web dashboard that displays received emails, SMS delivery logs with success or failure status, real-time statistics, and a built-in email injector for testing without a live inbox. A dedicated settings page allows users to dynamically configure filter keywords and recipient phone numbers without restarting the server.
+This project demonstrates practical integration of email protocols, REST APIs, real-time monitoring, and mobile communication, making it a useful tool for students, developers, and professionals who need reliable offline notifications for time-sensitive emails.
+
+Keywords: IMAP, SMS Gateway, Email Monitoring, Node.js, React.js, httpSMS, Keyword Filtering, Real-time Notifications
