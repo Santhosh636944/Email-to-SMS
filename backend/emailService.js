@@ -1,7 +1,7 @@
-// emailService.js - FIXED with Real Gmail IMAP Connection
+// emailService.js — LEGACY (not used by server.js)
+// The active implementation lives in services/emailService.js.
+// Kept for reference only. Credentials are never logged.
 require("dotenv").config();
-console.log(process.env.EMAIL_USER);
-console.log(process.env.EMAIL_PASSWORD);
 const Imap = require("imap");
 const { simpleParser } = require("mailparser");
 const EventEmitter = require("events");
